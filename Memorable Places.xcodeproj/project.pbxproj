@@ -12,6 +12,8 @@
 		F75A315C1DC152BA001B1895 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F75A315A1DC152BA001B1895 /* Main.storyboard */; };
 		F75A315E1DC152BA001B1895 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F75A315D1DC152BA001B1895 /* Assets.xcassets */; };
 		F75A31611DC152BA001B1895 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F75A315F1DC152BA001B1895 /* LaunchScreen.storyboard */; };
+		F75A31691DC1613C001B1895 /* PlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75A31681DC1613C001B1895 /* PlacesViewController.swift */; };
+		F79461D81DD26FAA004CFD8C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F79461D71DD26FAA004CFD8C /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		F75A315D1DC152BA001B1895 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F75A31601DC152BA001B1895 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F75A31621DC152BA001B1895 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F75A31681DC1613C001B1895 /* PlacesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacesViewController.swift; sourceTree = "<group>"; };
+		F79461D71DD26FAA004CFD8C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F79461D81DD26FAA004CFD8C /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,7 @@
 			children = (
 				F75A31551DC152BA001B1895 /* Memorable Places */,
 				F75A31541DC152BA001B1895 /* Products */,
+				F79461D61DD26FA9004CFD8C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,11 +63,20 @@
 				F75A31561DC152BA001B1895 /* AppDelegate.swift */,
 				F75A31581DC152BA001B1895 /* ViewController.swift */,
 				F75A315A1DC152BA001B1895 /* Main.storyboard */,
+				F75A31681DC1613C001B1895 /* PlacesViewController.swift */,
 				F75A315D1DC152BA001B1895 /* Assets.xcassets */,
 				F75A315F1DC152BA001B1895 /* LaunchScreen.storyboard */,
 				F75A31621DC152BA001B1895 /* Info.plist */,
 			);
 			path = "Memorable Places";
+			sourceTree = "<group>";
+		};
+		F79461D61DD26FA9004CFD8C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F79461D71DD26FAA004CFD8C /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -91,7 +106,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = VXette;
 				TargetAttributes = {
 					F75A31521DC152B9001B1895 = {
@@ -137,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F75A31691DC1613C001B1895 /* PlacesViewController.swift in Sources */,
 				F75A31591DC152BA001B1895 /* ViewController.swift in Sources */,
 				F75A31571DC152BA001B1895 /* AppDelegate.swift in Sources */,
 			);
@@ -182,6 +198,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -232,6 +249,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -302,6 +320,7 @@
 				F75A31671DC152BA001B1895 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
